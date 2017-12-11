@@ -1,6 +1,13 @@
 
 package com.signature.agile.models;
 
+import com.signature.agile.utils.ConnectionBuilder;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Cards {
     private int id;
     private String code;
@@ -54,6 +61,24 @@ public class Cards {
 
     public void setAvailable(boolean available) {
         this.available = available;
+    }
+    
+    public static int UseCard(String code){
+        try {
+            Connection con = ConnectionBuilder.getMySqlCond();
+            PreparedStatement pstmt = con.prepareStatement("update cards set available=? where code=?");
+            pstmt.setInt(1, 0);
+            pstmt.setString(2, code);
+            int updated = pstmt.executeUpdate();
+            if (updated != 0){
+               return 1;
+            }
+       } catch (ClassNotFoundException ex) {
+           Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
+       } catch (SQLException ex) {
+           Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
+       }
+       return 0;
     }
     
     

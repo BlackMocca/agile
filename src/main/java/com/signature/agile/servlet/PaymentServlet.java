@@ -5,6 +5,8 @@
  */
 package com.signature.agile.servlet;
 
+import com.signature.agile.models.Cards;
+import com.signature.agile.models.Users;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -32,13 +34,13 @@ public class PaymentServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         String code = request.getParameter("cardCode");
         double point = Double.valueOf(request.getParameter("point"));
-        Users user = request.getSession().getAttribute("user");
+        Users user = (Users) request.getSession().getAttribute("user");
         
         // update User point
-        int updatedUserPoint = Users.AddPoint(point); 
+        int updatedUserPoint = Users.AddPoint(point, user.getId()); 
         
         // update card
-        int updatedCard = Cards.UseCard();
+        int updatedCard = Cards.UseCard(code);
         
         
         request.getSession().setAttribute("user", user);
