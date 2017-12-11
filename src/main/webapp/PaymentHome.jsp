@@ -17,6 +17,6 @@
         <p>Username: ${username}</p>
         <p>Point: ${point}</p>
         
-        <a href="/cardCodeTopup"><button>GuPay Card</button></a>
+        <a href="RouteServlet"><button>GuPay Card</button></a>
     </body>
 </html>

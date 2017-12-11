@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestMaven.TestMaven
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.464 sec <<< FAILURE!
-testMessageFollowingIdTwo(TestMaven.TestMaven)  Time elapsed: 1.37 sec  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.401 sec <<< FAILURE!
+testMessageFollowingIdTwo(TestMaven.TestMaven)  Time elapsed: 0.378 sec  <<< FAILURE!
 junit.framework.ComparisonFailure: expected:<hello world> but was:<null>
 	at junit.framework.Assert.assertEquals(Assert.java:81)
 	at junit.framework.Assert.assertEquals(Assert.java:87)
 	at TestMaven.TestMaven.testMessageFollowingIdTwo(TestMaven.java:32)
-testMessageFollowingIdOne(TestMaven.TestMaven)  Time elapsed: 0 sec  <<< FAILURE!
+testMessageFollowingIdOne(TestMaven.TestMaven)  Time elapsed: 0.008 sec  <<< FAILURE!
 junit.framework.ComparisonFailure: expected:<สวัสดีชาวโลก> but was:<null>
 	at junit.framework.Assert.assertEquals(Assert.java:81)
 	at junit.framework.Assert.assertEquals(Assert.java:87)

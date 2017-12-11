@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="2" name="TestMaven.TestMaven" time="1.596" errors="0" skipped="0">
+<testsuite tests="2" failures="2" name="TestMaven.TestMaven" time="0.408" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\bin"/>
@@ -63,14 +63,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TestMaven.TestMaven" name="testMessageFollowingIdTwo" time="1.37">
+  <testcase classname="TestMaven.TestMaven" name="testMessageFollowingIdTwo" time="0.378">
     <failure message="expected:&lt;hello world&gt; but was:&lt;null&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;hello world&gt; but was:&lt;null&gt;
 	at junit.framework.Assert.assertEquals(Assert.java:81)
 	at junit.framework.Assert.assertEquals(Assert.java:87)
 	at TestMaven.TestMaven.testMessageFollowingIdTwo(TestMaven.java:32)
 </failure>
   </testcase>
-  <testcase classname="TestMaven.TestMaven" name="testMessageFollowingIdOne" time="0">
+  <testcase classname="TestMaven.TestMaven" name="testMessageFollowingIdOne" time="0.008">
     <failure message="expected:&lt;สวัสดีชาวโลก&gt; but was:&lt;null&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;สวัสดีชาวโลก&gt; but was:&lt;null&gt;
 	at junit.framework.Assert.assertEquals(Assert.java:81)
 	at junit.framework.Assert.assertEquals(Assert.java:87)
