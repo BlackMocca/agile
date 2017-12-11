@@ -4,9 +4,25 @@
         <servlet-name>HomeServlet</servlet-name>
         <servlet-class>com.signature.agile.servlet.HomeServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ValidationServlet</servlet-name>
+        <servlet-class>com.signature.agile.servlet.ValidationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RouteServlet</servlet-name>
+        <servlet-class>com.signature.agile.servlet.RouteServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/HomeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidationServlet</servlet-name>
+        <url-pattern>/ValidationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RouteServlet</servlet-name>
+        <url-pattern>/RouteServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
