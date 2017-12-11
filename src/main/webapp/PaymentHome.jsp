@@ -14,8 +14,8 @@
     <body>
         <h1>Payment Home</h1>
         
-        <p>Username</p>
-        <p>Point</p>
+        <p>Username: ${username}</p>
+        <p>Point: ${point}</p>
         
         <a href="/cardCodeTopup"><button>GuPay Card</button></a>
     </body>
